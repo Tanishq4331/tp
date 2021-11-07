@@ -19,7 +19,7 @@ import static seedu.address.testutil.TypicalTasks.ORDER;
 
 import org.junit.jupiter.api.Test;
 
-import seedu.address.logic.commands.AddTaskCommand;
+import seedu.address.logic.commands.task.AddTaskCommand;
 import seedu.address.model.Date;
 import seedu.address.model.Label;
 import seedu.address.model.tag.TaskTag;

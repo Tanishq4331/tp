@@ -1,9 +1,11 @@
-package seedu.address.logic.commands;
+package seedu.address.logic.commands.order;
 
 import static java.util.Objects.requireNonNull;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_SORT_FIELD;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_SORT_ORDERING;
 
+import seedu.address.logic.commands.Command;
+import seedu.address.logic.commands.CommandResult;
 import seedu.address.model.Model;
 import seedu.address.model.sort.SortDescriptor;
 import seedu.address.model.sort.SortField;

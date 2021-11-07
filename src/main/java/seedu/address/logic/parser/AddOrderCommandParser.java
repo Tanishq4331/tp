@@ -8,7 +8,7 @@ import static seedu.address.logic.parser.CliSyntax.PREFIX_LABEL;
 
 import java.util.stream.Stream;
 
-import seedu.address.logic.commands.AddOrderCommand;
+import seedu.address.logic.commands.order.AddOrderCommand;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.Date;
 import seedu.address.model.Label;

@@ -14,6 +14,7 @@ import seedu.address.ModelStub;
 import seedu.address.commons.core.Messages;
 import seedu.address.commons.core.index.Index;
 import seedu.address.logic.commands.exceptions.CommandException;
+import seedu.address.logic.commands.task.DeleteTaskCommand;
 import seedu.address.model.Date;
 import seedu.address.model.Label;
 import seedu.address.model.tag.TaskTag;

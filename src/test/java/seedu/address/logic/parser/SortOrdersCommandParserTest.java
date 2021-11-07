@@ -8,7 +8,7 @@ import static seedu.address.logic.parser.CommandParserTestUtil.assertParseSucces
 
 import org.junit.jupiter.api.Test;
 
-import seedu.address.logic.commands.SortOrdersCommand;
+import seedu.address.logic.commands.order.SortOrdersCommand;
 import seedu.address.model.sort.SortField;
 import seedu.address.model.sort.SortOrdering;
 

@@ -7,8 +7,8 @@ import static seedu.address.logic.commands.CommandTestUtil.DESC_SEW;
 import static seedu.address.logic.commands.CommandTestUtil.VALID_LABEL_ORDER;
 import static seedu.address.logic.commands.CommandTestUtil.assertCommandFailure;
 import static seedu.address.logic.commands.CommandTestUtil.assertCommandSuccess;
-import static seedu.address.logic.commands.EditTaskCommand.MESSAGE_DUPLICATE_TASK;
-import static seedu.address.logic.commands.EditTaskCommand.MESSAGE_NO_CHANGES_MADE;
+import static seedu.address.logic.commands.task.EditTaskCommand.MESSAGE_DUPLICATE_TASK;
+import static seedu.address.logic.commands.task.EditTaskCommand.MESSAGE_NO_CHANGES_MADE;
 import static seedu.address.testutil.TypicalIndexes.INDEX_FIRST_TASK;
 import static seedu.address.testutil.TypicalIndexes.INDEX_SECOND_TASK;
 
@@ -16,7 +16,8 @@ import org.junit.jupiter.api.Test;
 
 import seedu.address.commons.core.Messages;
 import seedu.address.commons.core.index.Index;
-import seedu.address.logic.commands.EditTaskCommand.EditTaskDescriptor;
+import seedu.address.logic.commands.task.EditTaskCommand;
+import seedu.address.logic.commands.task.EditTaskCommand.EditTaskDescriptor;
 import seedu.address.model.AddressBook;
 import seedu.address.model.Label;
 import seedu.address.model.Model;

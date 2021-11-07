@@ -7,8 +7,8 @@ import static seedu.address.logic.parser.CliSyntax.PREFIX_LABEL;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_TASK_TAG;
 
 import seedu.address.commons.core.index.Index;
-import seedu.address.logic.commands.EditTaskCommand;
-import seedu.address.logic.commands.EditTaskCommand.EditTaskDescriptor;
+import seedu.address.logic.commands.task.EditTaskCommand;
+import seedu.address.logic.commands.task.EditTaskCommand.EditTaskDescriptor;
 import seedu.address.logic.parser.exceptions.ParseException;
 
 /**

@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
 
-import seedu.address.logic.commands.FindTaskCommand;
+import seedu.address.logic.commands.task.FindTaskCommand;
 import seedu.address.model.task.TaskContainsKeywordsPredicate;
 
 public class FindTaskCommandParserTest {

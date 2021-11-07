@@ -6,7 +6,7 @@ import static seedu.address.logic.parser.CliSyntax.PREFIX_SORT_ORDERING;
 
 import java.util.stream.Stream;
 
-import seedu.address.logic.commands.SortOrdersCommand;
+import seedu.address.logic.commands.order.SortOrdersCommand;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.sort.SortField;
 import seedu.address.model.sort.SortOrdering;

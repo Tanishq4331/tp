@@ -24,8 +24,8 @@ import static seedu.address.testutil.TypicalIndexes.INDEX_THIRD_TASK;
 import org.junit.jupiter.api.Test;
 
 import seedu.address.commons.core.index.Index;
-import seedu.address.logic.commands.EditTaskCommand;
-import seedu.address.logic.commands.EditTaskCommand.EditTaskDescriptor;
+import seedu.address.logic.commands.task.EditTaskCommand;
+import seedu.address.logic.commands.task.EditTaskCommand.EditTaskDescriptor;
 import seedu.address.model.Date;
 import seedu.address.model.Label;
 import seedu.address.testutil.EditTaskDescriptorBuilder;

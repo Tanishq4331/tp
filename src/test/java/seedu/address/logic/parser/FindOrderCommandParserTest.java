@@ -8,7 +8,7 @@ import java.util.Arrays;
 
 import org.junit.jupiter.api.Test;
 
-import seedu.address.logic.commands.FindOrderCommand;
+import seedu.address.logic.commands.order.FindOrderCommand;
 import seedu.address.model.order.OrderContainsKeywordsPredicate;
 
 public class FindOrderCommandParserTest {

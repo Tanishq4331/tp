@@ -4,8 +4,8 @@ import static seedu.address.logic.parser.CliSyntax.PREFIX_DATE;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_LABEL;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_TASK_TAG;
 
-import seedu.address.logic.commands.AddTaskCommand;
-import seedu.address.logic.commands.EditTaskCommand.EditTaskDescriptor;
+import seedu.address.logic.commands.task.AddTaskCommand;
+import seedu.address.logic.commands.task.EditTaskCommand.EditTaskDescriptor;
 import seedu.address.model.task.Task;
 
 /**

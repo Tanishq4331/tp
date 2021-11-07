@@ -7,7 +7,7 @@ import static seedu.address.logic.parser.CliSyntax.PREFIX_TASK_TAG;
 
 import java.util.stream.Stream;
 
-import seedu.address.logic.commands.AddTaskCommand;
+import seedu.address.logic.commands.task.AddTaskCommand;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.Date;
 import seedu.address.model.Label;

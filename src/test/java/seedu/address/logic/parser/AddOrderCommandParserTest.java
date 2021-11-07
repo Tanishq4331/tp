@@ -22,7 +22,7 @@ import static seedu.address.logic.parser.CommandParserTestUtil.assertParseSucces
 
 import org.junit.jupiter.api.Test;
 
-import seedu.address.logic.commands.AddOrderCommand;
+import seedu.address.logic.commands.order.AddOrderCommand;
 import seedu.address.model.Date;
 import seedu.address.model.Label;
 import seedu.address.model.order.Amount;

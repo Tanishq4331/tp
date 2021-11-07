@@ -7,7 +7,7 @@ import static seedu.address.logic.parser.CliSyntax.PREFIX_LABEL;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_SORT_FIELD;
 import static seedu.address.logic.parser.CliSyntax.PREFIX_SORT_ORDERING;
 
-import seedu.address.logic.commands.AddOrderCommand;
+import seedu.address.logic.commands.order.AddOrderCommand;
 import seedu.address.model.order.Order;
 
 /**
