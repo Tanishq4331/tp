@@ -124,6 +124,7 @@ public class ModelManager implements Model {
 
     @Override
     public void deletePerson(Person target) {
+        logger.info("deleting person: " + target);
         addressBook.removePerson(target);
     }
 
@@ -186,6 +187,7 @@ public class ModelManager implements Model {
      */
     @Override
     public void deleteTask(Task toDelete) {
+        logger.info("deleting task: " + toDelete);
         taskBook.deleteTask(toDelete);
     }
 
@@ -278,6 +280,7 @@ public class ModelManager implements Model {
      * Deletes an order from orderBook.
      */
     public void deleteOrder(Order toDelete) {
+        logger.info("deleting order: " + toDelete);
         orderBook.deleteOrder(toDelete);
     }
 
@@ -358,6 +361,13 @@ public class ModelManager implements Model {
         Collections.reverse(clientTotalOrders);
     }
 
+    @Override
+    public void resetOrderView() {
+        logger.info("resetting order view");
+        Comparator<Order> defaultComparator = Order::compareTo;
+        orderBook.sortOrders(defaultComparator);
+        updateFilteredOrderList(PREDICATE_SHOW_ALL_ORDERS);
+    }
 
     //=========== Filtered Person List Accessors =============================================================
 
@@ -397,13 +407,6 @@ public class ModelManager implements Model {
                 && filteredPersons.equals(other.filteredPersons)
                 && filteredTasks.equals(other.filteredTasks)
                 && filteredOrders.equals(other.filteredOrders);
-    }
-
-    @Override
-    public void resetOrderView() {
-        Comparator<Order> defaultComparator = Order::compareTo;
-        orderBook.sortOrders(defaultComparator);
-        updateFilteredOrderList(PREDICATE_SHOW_ALL_ORDERS);
     }
 
     //=========== AddressBook & OrderBook Relation Check =======================================================
