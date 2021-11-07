@@ -15,33 +15,31 @@ import java.util.stream.Collectors;
 
 import org.junit.jupiter.api.Test;
 
-import seedu.address.logic.commands.client.AddCommand;
-import seedu.address.logic.commands.order.AddOrderCommand;
-import seedu.address.logic.commands.task.AddTaskCommand;
 import seedu.address.logic.commands.ClearCommand;
-import seedu.address.logic.commands.client.DeleteCommand;
-import seedu.address.logic.commands.order.DeleteOrderCommand;
-import seedu.address.logic.commands.task.DeleteTaskCommand;
-import seedu.address.logic.commands.client.EditCommand;
-import seedu.address.logic.commands.client.EditCommand.EditPersonDescriptor;
-import seedu.address.logic.commands.task.EditTaskCommand;
-import seedu.address.logic.commands.task.EditTaskCommand.EditTaskDescriptor;
 import seedu.address.logic.commands.ExitCommand;
-import seedu.address.logic.commands.client.FindCommand;
-import seedu.address.logic.commands.order.FindOrderCommand;
-import seedu.address.logic.commands.task.FindTaskCommand;
 import seedu.address.logic.commands.HelpCommand;
+import seedu.address.logic.commands.client.AddCommand;
+import seedu.address.logic.commands.client.DeleteCommand;
+import seedu.address.logic.commands.client.EditCommand;
+import seedu.address.logic.commands.client.FindCommand;
 import seedu.address.logic.commands.client.ListCommand;
+import seedu.address.logic.commands.order.AddOrderCommand;
+import seedu.address.logic.commands.order.DeleteOrderCommand;
+import seedu.address.logic.commands.order.FindOrderCommand;
 import seedu.address.logic.commands.order.ListOrderCommand;
-import seedu.address.logic.commands.task.ListTaskCommand;
 import seedu.address.logic.commands.order.MarkOrderCommand;
-import seedu.address.logic.commands.task.MarkTaskCommand;
 import seedu.address.logic.commands.order.ShowCompletedOrders;
-import seedu.address.logic.commands.task.ShowCompletedTasks;
 import seedu.address.logic.commands.order.ShowIncompleteOrders;
-import seedu.address.logic.commands.task.ShowIncompleteTasks;
 import seedu.address.logic.commands.order.SortOrdersCommand;
 import seedu.address.logic.commands.order.TotalOrdersCommand;
+import seedu.address.logic.commands.task.AddTaskCommand;
+import seedu.address.logic.commands.task.DeleteTaskCommand;
+import seedu.address.logic.commands.task.EditTaskCommand;
+import seedu.address.logic.commands.task.FindTaskCommand;
+import seedu.address.logic.commands.task.ListTaskCommand;
+import seedu.address.logic.commands.task.MarkTaskCommand;
+import seedu.address.logic.commands.task.ShowCompletedTasks;
+import seedu.address.logic.commands.task.ShowIncompleteTasks;
 import seedu.address.logic.parser.exceptions.ParseException;
 import seedu.address.model.order.Order;
 import seedu.address.model.order.OrderContainsKeywordsPredicate;
@@ -74,7 +72,7 @@ public class SalesNoteParserTest {
     @Test
     public void parseCommand_edit() throws Exception {
         Person person = new PersonBuilder().build();
-        EditPersonDescriptor descriptor = new EditPersonDescriptorBuilder(person).build();
+        EditCommand.EditPersonDescriptor descriptor = new EditPersonDescriptorBuilder(person).build();
         EditCommand command = (EditCommand) parser.parseCommand(EditCommand.COMMAND_WORD + " "
                 + INDEX_FIRST_PERSON.getOneBased() + " " + PersonUtil.getEditPersonDescriptorDetails(descriptor));
         assertEquals(new EditCommand(INDEX_FIRST_PERSON, descriptor), command);
@@ -131,7 +129,7 @@ public class SalesNoteParserTest {
     @Test
     public void parseCommand_editTask() throws Exception {
         Task task = new TaskBuilder().build();
-        EditTaskDescriptor descriptor = new EditTaskDescriptorBuilder(task).build();
+        EditTaskCommand.EditTaskDescriptor descriptor = new EditTaskDescriptorBuilder(task).build();
         EditTaskCommand command = (EditTaskCommand) parser.parseCommand(EditTaskCommand.COMMAND_WORD + " "
                 + INDEX_FIRST_TASK.getOneBased() + " " + TaskUtil.getEditTaskDescriptorDetails(descriptor));
         assertEquals(new EditTaskCommand(INDEX_FIRST_PERSON, descriptor), command);
